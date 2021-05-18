@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBA61ECA26480DD900F27597 /* FileImportAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61EC926480DD900F27597 /* FileImportAppApp.swift */; };
-		DBA61ECC26480DD900F27597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61ECB26480DD900F27597 /* ContentView.swift */; };
+		DB6785DE264C5E9A003758F7 /* FileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6785DD264C5E9A003758F7 /* FileConverter.swift */; };
+		DB7BB195264B041100D8BA69 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BB194264B041100D8BA69 /* SwiftExtensions.swift */; };
+		DBA61ECA26480DD900F27597 /* FileImportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61EC926480DD900F27597 /* FileImportApp.swift */; };
+		DBA61ECC26480DD900F27597 /* FileImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61ECB26480DD900F27597 /* FileImportView.swift */; };
 		DBA61ECE26480DDB00F27597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA61ECD26480DDB00F27597 /* Assets.xcassets */; };
 		DBA61ED126480DDB00F27597 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA61ED026480DDB00F27597 /* Preview Assets.xcassets */; };
 		DBA61EDC26480DDC00F27597 /* FileImportAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61EDB26480DDC00F27597 /* FileImportAppTests.swift */; };
 		DBA61EE726480DDC00F27597 /* FileImportAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA61EE626480DDC00F27597 /* FileImportAppUITests.swift */; };
+		DBC535D92652CF4400418850 /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535D82652CF4400418850 /* ViewDidLoadModifier.swift */; };
+		DBC535E32652D00800418850 /* FileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535E22652D00800418850 /* FileViewModel.swift */; };
+		DBC535E82652D02400418850 /* FileExportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535E72652D02400418850 /* FileExportViewModel.swift */; };
+		DBC535ED2652D04800418850 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535EC2652D04800418850 /* FileView.swift */; };
+		DBC535F22652D06500418850 /* FileImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535F12652D06500418850 /* FileImportViewModel.swift */; };
+		DBC535F72652D07E00418850 /* FileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535F62652D07E00418850 /* FileDetailView.swift */; };
+		DBC535FC2652D0B700418850 /* FileGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC535FB2652D0B700418850 /* FileGridView.swift */; };
+		DBC536072652F26200418850 /* FilePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC536062652F26200418850 /* FilePreviewView.swift */; };
+		DBC5361C2652F5A200418850 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5361B2652F5A200418850 /* AsyncOperation.swift */; };
+		DBC536252652F60700418850 /* FileConvertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC536242652F60700418850 /* FileConvertOperation.swift */; };
+		DBC5362D2653007800418850 /* FileConvertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5362C2653007800418850 /* FileConvertManager.swift */; };
+		DBC53632265301F300418850 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC53631265301F300418850 /* Constants.swift */; };
+		DBC536372653151F00418850 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC536362653151F00418850 /* ShareSheet.swift */; };
+		DBD2E376264C4C1D00F9D5CE /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD2E375264C4C1D00F9D5CE /* FileManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB6785DD264C5E9A003758F7 /* FileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConverter.swift; sourceTree = "<group>"; };
+		DB7BB194264B041100D8BA69 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
 		DBA61EC626480DD900F27597 /* FileImportApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileImportApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA61EC926480DD900F27597 /* FileImportAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportAppApp.swift; sourceTree = "<group>"; };
-		DBA61ECB26480DD900F27597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBA61EC926480DD900F27597 /* FileImportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportApp.swift; sourceTree = "<group>"; };
+		DBA61ECB26480DD900F27597 /* FileImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportView.swift; sourceTree = "<group>"; };
 		DBA61ECD26480DDB00F27597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA61ED026480DDB00F27597 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBA61ED226480DDB00F27597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +63,20 @@
 		DBA61EE226480DDC00F27597 /* FileImportAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileImportAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA61EE626480DDC00F27597 /* FileImportAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportAppUITests.swift; sourceTree = "<group>"; };
 		DBA61EE826480DDC00F27597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC535D82652CF4400418850 /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
+		DBC535E22652D00800418850 /* FileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileViewModel.swift; sourceTree = "<group>"; };
+		DBC535E72652D02400418850 /* FileExportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExportViewModel.swift; sourceTree = "<group>"; };
+		DBC535EC2652D04800418850 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+		DBC535F12652D06500418850 /* FileImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportViewModel.swift; sourceTree = "<group>"; };
+		DBC535F62652D07E00418850 /* FileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailView.swift; sourceTree = "<group>"; };
+		DBC535FB2652D0B700418850 /* FileGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileGridView.swift; sourceTree = "<group>"; };
+		DBC536062652F26200418850 /* FilePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePreviewView.swift; sourceTree = "<group>"; };
+		DBC5361B2652F5A200418850 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		DBC536242652F60700418850 /* FileConvertOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConvertOperation.swift; sourceTree = "<group>"; };
+		DBC5362C2653007800418850 /* FileConvertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConvertManager.swift; sourceTree = "<group>"; };
+		DBC53631265301F300418850 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBC536362653151F00418850 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		DBD2E375264C4C1D00F9D5CE /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +127,13 @@
 		DBA61EC826480DD900F27597 /* FileImportApp */ = {
 			isa = PBXGroup;
 			children = (
-				DBA61EC926480DD900F27597 /* FileImportAppApp.swift */,
-				DBA61ECB26480DD900F27597 /* ContentView.swift */,
+				DBA61EC926480DD900F27597 /* FileImportApp.swift */,
+				DBC5360B2652F48800418850 /* Components */,
+				DBC536232652F5B100418850 /* FileConvert */,
 				DBA61ECD26480DDB00F27597 /* Assets.xcassets */,
 				DBA61ED226480DDB00F27597 /* Info.plist */,
 				DBA61ECF26480DDB00F27597 /* Preview Content */,
+				DBD2E37D264C4C2F00F9D5CE /* Utils */,
 			);
 			path = FileImportApp;
 			sourceTree = "<group>";
@@ -128,6 +162,44 @@
 				DBA61EE826480DDC00F27597 /* Info.plist */,
 			);
 			path = FileImportAppUITests;
+			sourceTree = "<group>";
+		};
+		DBC5360B2652F48800418850 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DBC535F12652D06500418850 /* FileImportViewModel.swift */,
+				DBA61ECB26480DD900F27597 /* FileImportView.swift */,
+				DBC535FB2652D0B700418850 /* FileGridView.swift */,
+				DBC535E22652D00800418850 /* FileViewModel.swift */,
+				DBC535EC2652D04800418850 /* FileView.swift */,
+				DBC535E72652D02400418850 /* FileExportViewModel.swift */,
+				DBC535F62652D07E00418850 /* FileDetailView.swift */,
+				DBC536062652F26200418850 /* FilePreviewView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DBC536232652F5B100418850 /* FileConvert */ = {
+			isa = PBXGroup;
+			children = (
+				DB6785DD264C5E9A003758F7 /* FileConverter.swift */,
+				DBC536242652F60700418850 /* FileConvertOperation.swift */,
+				DBC5362C2653007800418850 /* FileConvertManager.swift */,
+			);
+			path = FileConvert;
+			sourceTree = "<group>";
+		};
+		DBD2E37D264C4C2F00F9D5CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DBC5361B2652F5A200418850 /* AsyncOperation.swift */,
+				DB7BB194264B041100D8BA69 /* SwiftExtensions.swift */,
+				DBD2E375264C4C1D00F9D5CE /* FileManagerExtension.swift */,
+				DBC535D82652CF4400418850 /* ViewDidLoadModifier.swift */,
+				DBC53631265301F300418850 /* Constants.swift */,
+				DBC536362653151F00418850 /* ShareSheet.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +331,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA61ECC26480DD900F27597 /* ContentView.swift in Sources */,
-				DBA61ECA26480DD900F27597 /* FileImportAppApp.swift in Sources */,
+				DBC535FC2652D0B700418850 /* FileGridView.swift in Sources */,
+				DBC5362D2653007800418850 /* FileConvertManager.swift in Sources */,
+				DBA61ECC26480DD900F27597 /* FileImportView.swift in Sources */,
+				DBC535F72652D07E00418850 /* FileDetailView.swift in Sources */,
+				DBD2E376264C4C1D00F9D5CE /* FileManagerExtension.swift in Sources */,
+				DBC535E82652D02400418850 /* FileExportViewModel.swift in Sources */,
+				DBC536072652F26200418850 /* FilePreviewView.swift in Sources */,
+				DBC535E32652D00800418850 /* FileViewModel.swift in Sources */,
+				DBC536252652F60700418850 /* FileConvertOperation.swift in Sources */,
+				DBA61ECA26480DD900F27597 /* FileImportApp.swift in Sources */,
+				DBC535F22652D06500418850 /* FileImportViewModel.swift in Sources */,
+				DBC535D92652CF4400418850 /* ViewDidLoadModifier.swift in Sources */,
+				DB7BB195264B041100D8BA69 /* SwiftExtensions.swift in Sources */,
+				DBC535ED2652D04800418850 /* FileView.swift in Sources */,
+				DBC5361C2652F5A200418850 /* AsyncOperation.swift in Sources */,
+				DBC536372653151F00418850 /* ShareSheet.swift in Sources */,
+				DB6785DE264C5E9A003758F7 /* FileConverter.swift in Sources */,
+				DBC53632265301F300418850 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
