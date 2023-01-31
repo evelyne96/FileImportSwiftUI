@@ -31,23 +31,20 @@ class FileConvertOperation: AsyncOperation {
     }
     
     override func execute() {
-        DispatchQueue.global().async { [weak self] in
-            guard let self = self else { return }
-            let destFolder = self.destination.deletingLastPathComponent()
-            FileManager.createDirectoryIfNotExists(at: destFolder)
-            do {
-                try self.converter.convert(from: self.source, to: self.destination, progress: { [weak self] (progress) -> ProgressAction in
-                    if progress == 1.0 {
-                        self?.executeCompleted?()
-                        self?.completion(.success)
-                    }
-                    
-                    return self?.progressBlock(progress) ?? .abort
-                })
-            } catch {
-                self.completion(.failure(error))
-                self.executeCompleted?()
-            }
+        let destFolder = destination.deletingLastPathComponent()
+        FileManager.createDirectoryIfNotExists(at: destFolder)
+        do {
+            try converter.convert(from: source, to: destination, progress: { [weak self] (progress) -> ProgressAction in
+                if progress == 1.0 {
+                    self?.executeCompleted?()
+                    self?.completion(.success)
+                }
+                
+                return self?.progressBlock(progress) ?? .abort
+            })
+        } catch {
+            completion(.failure(error))
+            executeCompleted?()
         }
     }
 }
