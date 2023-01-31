@@ -81,6 +81,7 @@ class FileExportViewModel: ObservableObject {
         case .progress:
             exportStatus = .aborted
         case .done:
+            AppAnalytics.track(.fileExported(type: type))
             sharePresented.toggle()
         case .aborted:
             exportStatus = .none
