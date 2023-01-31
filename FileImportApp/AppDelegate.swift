@@ -13,6 +13,7 @@ import AppCenterCrashes
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        AppCenter.start(withAppSecret: try? Configuration.value(for: "APPCENTER_KEY"), services:  [Analytics.self, Crashes.self])
         return true
     }
 }
