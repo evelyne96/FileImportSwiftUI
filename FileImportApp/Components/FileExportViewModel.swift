@@ -83,7 +83,7 @@ class FileExportViewModel: ObservableObject {
         case .done:
             sharePresented.toggle()
         case .aborted:
-            break
+            exportStatus = .none
         }
     }
     
