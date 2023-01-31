@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D556A764BCFA13F7298907E /* Pods_FileImportApp_FileImportAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB6F440D6DF6C7DBE254FAD /* Pods_FileImportApp_FileImportAppUITests.framework */; };
+		8A2691D4298944F100D2A8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691D3298944F100D2A8A8 /* AppDelegate.swift */; };
 		9B940FEF4EDF5041493DCD2F /* Pods_FileImportApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C252081AED11DE4FFCC624D /* Pods_FileImportApp.framework */; };
 		AC4FC5FE570A8AC7418A33F3 /* Pods_FileImportAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6A3A8FA2E0758A6F67C317 /* Pods_FileImportAppTests.framework */; };
 		DB6785DE264C5E9A003758F7 /* FileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6785DD264C5E9A003758F7 /* FileConverter.swift */; };
@@ -57,6 +58,7 @@
 		75492C7098517C8EBC05A36F /* Pods-FileImportApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileImportApp.release.xcconfig"; path = "Target Support Files/Pods-FileImportApp/Pods-FileImportApp.release.xcconfig"; sourceTree = "<group>"; };
 		82683639453CFE42E2BEE806 /* Pods-FileImportApp-FileImportAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileImportApp-FileImportAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FileImportApp-FileImportAppUITests/Pods-FileImportApp-FileImportAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		83EB34EDE727D29EC9CBF829 /* Pods-FileImportApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileImportApp.debug.xcconfig"; path = "Target Support Files/Pods-FileImportApp/Pods-FileImportApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8A2691D3298944F100D2A8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C252081AED11DE4FFCC624D /* Pods_FileImportApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileImportApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DED4A787B6E880141732906 /* Pods-FileImportAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileImportAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FileImportAppTests/Pods-FileImportAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6785DD264C5E9A003758F7 /* FileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConverter.swift; sourceTree = "<group>"; };
@@ -139,7 +141,6 @@
 				9DED4A787B6E880141732906 /* Pods-FileImportAppTests.debug.xcconfig */,
 				0002402444C73BE7B6DBC6E7 /* Pods-FileImportAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -168,6 +169,7 @@
 		DBA61EC826480DD900F27597 /* FileImportApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A2691D3298944F100D2A8A8 /* AppDelegate.swift */,
 				DBA61EC926480DD900F27597 /* FileImportApp.swift */,
 				DBC5360B2652F48800418850 /* Components */,
 				DBC536232652F5B100418850 /* FileConvert */,
@@ -446,6 +448,7 @@
 			files = (
 				DBC535FC2652D0B700418850 /* FileGridView.swift in Sources */,
 				DBC5362D2653007800418850 /* FileConvertManager.swift in Sources */,
+				8A2691D4298944F100D2A8A8 /* AppDelegate.swift in Sources */,
 				DBA61ECC26480DD900F27597 /* FileImportView.swift in Sources */,
 				DBC535F72652D07E00418850 /* FileDetailView.swift in Sources */,
 				DBD2E376264C4C1D00F9D5CE /* FileManagerExtension.swift in Sources */,

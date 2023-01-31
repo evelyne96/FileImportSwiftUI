@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct FileImportApp: App {
+    // inject into SwiftUI life-cycle via adaptor !!!
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             FileImportView()
