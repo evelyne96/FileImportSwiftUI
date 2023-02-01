@@ -38,3 +38,9 @@ extension ObservableObject {
         }
     }
 }
+
+extension View {
+    func accessibilityLabel(_ label: AccessabilityID) -> ModifiedContent<Self, AccessibilityAttachmentModifier> {
+        return accessibilityLabel(label.rawValue)
+    }
+}

@@ -8,23 +8,6 @@
 import Foundation
 import SwiftUI
 
-enum FileExportType: CustomStringConvertible {
-    case step
-    case stl
-    case obj
-    
-    var description: String {
-        switch self {
-        case .stl:
-            return "STL"
-        case .obj:
-            return "OBJ"
-        case .step:
-            return "STEP"
-        }
-    }
-}
-
 enum FileExportStatus: Int {
     case none
     case progress
@@ -81,7 +64,7 @@ class FileExportViewModel: ObservableObject {
         case .progress:
             exportStatus = .aborted
         case .done:
-            AppAnalytics.track(.fileExported(type: type))
+            AppAnalytics.shared.track(.fileExported(type: type))
             sharePresented.toggle()
         case .aborted:
             exportStatus = .none

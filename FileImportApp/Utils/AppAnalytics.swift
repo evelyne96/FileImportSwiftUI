@@ -6,11 +6,19 @@
 //
 
 import Foundation
-import AppCenter
-import AppCenterAnalytics
-import AppCenterCrashes
 
-enum AppAnalytics {
+protocol AnalyticsClient {
+    func start()
+    func track(_ description: String, properties: [String: String]?)
+}
+
+extension AnalyticsClient {
+    func track(_ description: String) {
+        track(description, properties: nil)
+    }
+}
+
+class AppAnalytics {
     enum Event: CustomStringConvertible {
         case fileExported(type: FileExportType)
         
@@ -27,11 +35,19 @@ enum AppAnalytics {
         }
     }
     
-    static func start() {
-        AppCenter.start(withAppSecret: try? Configuration.value(for: "APPCENTER_KEY"), services: [Analytics.self, Crashes.self])
+    static var shared: AppAnalytics = { .init() }()
+    private var client: AnalyticsClient?
+    
+    func start(with client: AnalyticsClient) {
+        self.client = client
+        client.start()
     }
     
-    static func track(_ event: Event) {
-        Analytics.trackEvent(event.description, withProperties: event.properties)
+    func stop() {
+        client = nil
+    }
+    
+    func track(_ event: Event) {
+        client?.track(event.description, properties: event.properties)
     }
 }
