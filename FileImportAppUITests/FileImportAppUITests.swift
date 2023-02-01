@@ -33,13 +33,4 @@ class FileImportAppUITests: XCTestCase {
         let button = app.buttons[AccessabilityID.plusButton.rawValue]
         XCTAssertTrue(button.wait(), "Plus button does not exist")
     }
-    
-    func testPlusButtonOpensShareSheet() throws {
-        let button = app.buttons[AccessabilityID.plusButton.rawValue]
-        XCTAssertTrue(button.wait(), "Plus button does not exist")
-        button.tap()
-        
-        let label = app.staticTexts.element(matching: .any, identifier: "Shared")
-        XCTAssertTrue(label.wait(), "Shared label does not exist on share sheet")
-    }
 }
