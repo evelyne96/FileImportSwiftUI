@@ -30,6 +30,7 @@ final class AnalyticsTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        
         sut = AppAnalytics()
         mockClient = MockClient()
         sut.start(with: mockClient)
@@ -39,6 +40,7 @@ final class AnalyticsTest: XCTestCase {
         sut.stop()
         sut = nil
         mockClient = nil
+        
         super.tearDown()
     }
     
