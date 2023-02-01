@@ -3,5 +3,5 @@
  - Convert to stl, obj, step
  - Export file
 
-[![Build Status](https://build.appcenter.ms/v0.1/apps/90b57931-f894-4ca0-9627-397d9e5f0314/branches/main/badge)](https://appcenter.ms)
+[![Build Status](https://build.appcenter.ms/v0.1/apps/f3d778fb-2b1d-413a-8ac2-c860a7962642/branches/main/badge)](https://appcenter.ms)
 
