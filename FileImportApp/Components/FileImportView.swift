@@ -14,9 +14,9 @@ struct FileImportView: View {
     var body: some View {
         NavigationView {
             FileGridView(vm: importVM)
-            .navigationBarItems(trailing: Button(action: { showImport.toggle() }) {
+                .navigationBarItems(trailing: Button(action: { showImport.toggle() }) {
                 Image(systemName: "plus")
-            })
+                }.accessibilityLabel(AccessabilityID.plusButton))
         }.navigationViewStyle(StackNavigationViewStyle())
         .onLoad {
             importVM.reloadFiles()
