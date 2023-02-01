@@ -11,6 +11,12 @@
 		8A2691D4298944F100D2A8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691D3298944F100D2A8A8 /* AppDelegate.swift */; };
 		8A2691DD298950D800D2A8A8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DC298950D800D2A8A8 /* Configuration.swift */; };
 		8A2691DF29895A2200D2A8A8 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */; };
+		8A2691E1298A5B8B00D2A8A8 /* AppCenterAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E0298A5B8B00D2A8A8 /* AppCenterAnalytics.swift */; };
+		8A2691E5298A5C1400D2A8A8 /* AnalyticsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E4298A5C1400D2A8A8 /* AnalyticsTest.swift */; };
+		8A2691E6298A5D4800D2A8A8 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */; };
+		8A2691EA298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
+		8A2691EB298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
+		8A2691EC298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
 		9B940FEF4EDF5041493DCD2F /* Pods_FileImportApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C252081AED11DE4FFCC624D /* Pods_FileImportApp.framework */; };
 		AC4FC5FE570A8AC7418A33F3 /* Pods_FileImportAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6A3A8FA2E0758A6F67C317 /* Pods_FileImportAppTests.framework */; };
 		DB6785DE264C5E9A003758F7 /* FileConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6785DD264C5E9A003758F7 /* FileConverter.swift */; };
@@ -63,6 +69,9 @@
 		8A2691D3298944F100D2A8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A2691DC298950D800D2A8A8 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnalytics.swift; sourceTree = "<group>"; };
+		8A2691E0298A5B8B00D2A8A8 /* AppCenterAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterAnalytics.swift; sourceTree = "<group>"; };
+		8A2691E4298A5C1400D2A8A8 /* AnalyticsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsTest.swift; sourceTree = "<group>"; };
+		8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExportType.swift; sourceTree = "<group>"; };
 		8C252081AED11DE4FFCC624D /* Pods_FileImportApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileImportApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DED4A787B6E880141732906 /* Pods-FileImportAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileImportAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FileImportAppTests/Pods-FileImportAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB6785DD264C5E9A003758F7 /* FileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConverter.swift; sourceTree = "<group>"; };
@@ -197,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA61EDB26480DDC00F27597 /* FileImportAppTests.swift */,
+				8A2691E4298A5C1400D2A8A8 /* AnalyticsTest.swift */,
 				DBA61EDD26480DDC00F27597 /* Info.plist */,
 			);
 			path = FileImportAppTests;
@@ -222,6 +232,7 @@
 				DBC535E72652D02400418850 /* FileExportViewModel.swift */,
 				DBC535F62652D07E00418850 /* FileDetailView.swift */,
 				DBC536062652F26200418850 /* FilePreviewView.swift */,
+				8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				DBC536362653151F00418850 /* ShareSheet.swift */,
 				8A2691DC298950D800D2A8A8 /* Configuration.swift */,
 				8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */,
+				8A2691E0298A5B8B00D2A8A8 /* AppCenterAnalytics.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -469,10 +481,12 @@
 				DBC535D92652CF4400418850 /* ViewDidLoadModifier.swift in Sources */,
 				DB7BB195264B041100D8BA69 /* SwiftExtensions.swift in Sources */,
 				DBC535ED2652D04800418850 /* FileView.swift in Sources */,
+				8A2691E1298A5B8B00D2A8A8 /* AppCenterAnalytics.swift in Sources */,
 				DBC5361C2652F5A200418850 /* AsyncOperation.swift in Sources */,
 				DBC536372653151F00418850 /* ShareSheet.swift in Sources */,
 				DB6785DE264C5E9A003758F7 /* FileConverter.swift in Sources */,
 				DBC53632265301F300418850 /* Constants.swift in Sources */,
+				8A2691EA298A5F1600D2A8A8 /* FileExportType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +495,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA61EDC26480DDC00F27597 /* FileImportAppTests.swift in Sources */,
+				8A2691E6298A5D4800D2A8A8 /* AppAnalytics.swift in Sources */,
+				8A2691EB298A5F1600D2A8A8 /* FileExportType.swift in Sources */,
+				8A2691E5298A5C1400D2A8A8 /* AnalyticsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA61EE726480DDC00F27597 /* FileImportAppUITests.swift in Sources */,
+				8A2691EC298A5F1600D2A8A8 /* FileExportType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
