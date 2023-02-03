@@ -19,11 +19,15 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      - name: Bundle dependencies
-        run: bundle install
+      - uses: actions/cache@v2
+        with:
+          path: Pods
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+           ${{ runner.os }}-pods-
 
       - name: CocoaPods dependencies
-        run: bundle exec pod install
+        run: pod install
       
       - name: Run Unit Tests
         run: bundle exec fastlane unit_tests
