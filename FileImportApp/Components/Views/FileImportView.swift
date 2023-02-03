@@ -21,7 +21,9 @@ struct FileImportView: View {
         .onLoad {
             importVM.reloadFiles()
         }
-        .fileImporter(isPresented: $showImport, allowedContentTypes: [.shapr], allowsMultipleSelection: true) { (result) in
+        .fileImporter(isPresented: $showImport,
+                      allowedContentTypes: [.shapr],
+                      allowsMultipleSelection: true) { (result) in
             switch result {
             case .success(let fileURLs):
                 importVM.importFiles(files: fileURLs)

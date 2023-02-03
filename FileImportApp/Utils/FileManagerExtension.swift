@@ -44,19 +44,29 @@ extension FileManager {
     }
     
     class func copyFile(_ file: URL, to folder: URL) -> URL? {
-        var tempURL = URL(fileURLWithPath: folder.absoluteString)
-        tempURL.appendPathComponent(file.lastPathComponent)
+        let fileName = file.lastPathComponent
+        let destinationURL = getFirstFileURLThatNotExists(for: fileName, in: folder)
         do {
-            if FileManager.default.fileExists(atPath: tempURL.path) {
-                try FileManager.default.removeItem(atPath: tempURL.path)
-            }
-            try FileManager.default.copyItem(atPath: file.path, toPath: tempURL.path)
-            return tempURL
+            try FileManager.default.copyItem(atPath: file.path, toPath: destinationURL.path)
+            return destinationURL
         } catch {
             debugPrint(error.localizedDescription)
         }
         
         return nil
+    }
+    
+    class func getFirstFileURLThatNotExists(for fileName: String, in folder: URL) -> URL {
+        var destinationURL = URL(fileURLWithPath: folder.absoluteString)
+        destinationURL.appendPathComponent(fileName)
+        var nr = 1
+        while FileManager.default.fileExists(atPath: destinationURL.path) {
+            destinationURL.deleteLastPathComponent()
+            destinationURL.appendPathComponent("\(fileName)-\(nr)")
+            nr += 1
+        }
+        
+        return destinationURL
     }
     
     class func absoluteDocumentDirURL(filePath: String) -> URL? {

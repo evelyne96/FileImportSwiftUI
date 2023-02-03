@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D556A764BCFA13F7298907E /* Pods_FileImportApp_FileImportAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB6F440D6DF6C7DBE254FAD /* Pods_FileImportApp_FileImportAppUITests.framework */; };
+		8A259685298D338F000AABEC /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
 		8A2691D4298944F100D2A8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691D3298944F100D2A8A8 /* AppDelegate.swift */; };
 		8A2691DD298950D800D2A8A8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DC298950D800D2A8A8 /* Configuration.swift */; };
 		8A2691DF29895A2200D2A8A8 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */; };
@@ -15,8 +16,6 @@
 		8A2691E5298A5C1400D2A8A8 /* AnalyticsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E4298A5C1400D2A8A8 /* AnalyticsTest.swift */; };
 		8A2691E6298A5D4800D2A8A8 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */; };
 		8A2691EA298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
-		8A2691EB298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
-		8A2691EC298A5F1600D2A8A8 /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
 		8A2691EE298A704700D2A8A8 /* AccessabilityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691ED298A704700D2A8A8 /* AccessabilityID.swift */; };
 		8A2691EF298A704700D2A8A8 /* AccessabilityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691ED298A704700D2A8A8 /* AccessabilityID.swift */; };
 		8A2691F0298A704700D2A8A8 /* AccessabilityID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691ED298A704700D2A8A8 /* AccessabilityID.swift */; };
@@ -161,6 +160,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8A2691F1298ADA1700D2A8A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBC535F12652D06500418850 /* FileImportViewModel.swift */,
+				DBC535E22652D00800418850 /* FileViewModel.swift */,
+				DBC535E72652D02400418850 /* FileExportViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		8A2691F2298ADA2900D2A8A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBA61ECB26480DD900F27597 /* FileImportView.swift */,
+				DBC535EC2652D04800418850 /* FileView.swift */,
+				DBC535FB2652D0B700418850 /* FileGridView.swift */,
+				DBC535F62652D07E00418850 /* FileDetailView.swift */,
+				DBC536062652F26200418850 /* FilePreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DBA61EBD26480DD900F27597 = {
 			isa = PBXGroup;
 			children = (
@@ -228,15 +249,8 @@
 		DBC5360B2652F48800418850 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DBC535F12652D06500418850 /* FileImportViewModel.swift */,
-				DBA61ECB26480DD900F27597 /* FileImportView.swift */,
-				DBC535FB2652D0B700418850 /* FileGridView.swift */,
-				DBC535E22652D00800418850 /* FileViewModel.swift */,
-				DBC535EC2652D04800418850 /* FileView.swift */,
-				DBC535E72652D02400418850 /* FileExportViewModel.swift */,
-				DBC535F62652D07E00418850 /* FileDetailView.swift */,
-				DBC536062652F26200418850 /* FilePreviewView.swift */,
-				8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */,
+				8A2691F2298ADA2900D2A8A8 /* Views */,
+				8A2691F1298ADA1700D2A8A8 /* ViewModels */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -244,6 +258,7 @@
 		DBC536232652F5B100418850 /* FileConvert */ = {
 			isa = PBXGroup;
 			children = (
+				8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */,
 				DB6785DD264C5E9A003758F7 /* FileConverter.swift */,
 				DBC536242652F60700418850 /* FileConvertOperation.swift */,
 				DBC5362C2653007800418850 /* FileConvertManager.swift */,
@@ -503,7 +518,7 @@
 				DBA61EDC26480DDC00F27597 /* FileImportAppTests.swift in Sources */,
 				8A2691E6298A5D4800D2A8A8 /* AppAnalytics.swift in Sources */,
 				8A2691EF298A704700D2A8A8 /* AccessabilityID.swift in Sources */,
-				8A2691EB298A5F1600D2A8A8 /* FileExportType.swift in Sources */,
+				8A259685298D338F000AABEC /* FileExportType.swift in Sources */,
 				8A2691E5298A5C1400D2A8A8 /* AnalyticsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +529,6 @@
 			files = (
 				DBA61EE726480DDC00F27597 /* FileImportAppUITests.swift in Sources */,
 				8A2691F0298A704700D2A8A8 /* AccessabilityID.swift in Sources */,
-				8A2691EC298A5F1600D2A8A8 /* FileExportType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,9 +671,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"FileImportApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2M6MREMEHZ;
+				DEVELOPMENT_TEAM = T84TP2N2JU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FileImportApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -671,6 +686,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -681,8 +697,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FileImportApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2M6MREMEHZ;
+				DEVELOPMENT_TEAM = T84TP2N2JU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FileImportApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -694,6 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
