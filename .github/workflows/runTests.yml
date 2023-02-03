@@ -9,6 +9,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Bundle dependencies
+        run: bundle install
 
       - name: Cancel Previous Runs
         uses: styfle/cancel-workflow-action@0.9.1
