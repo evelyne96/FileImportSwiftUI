@@ -19,7 +19,7 @@ platform :ios do
 
   # Testing
   desc "Runs all the unit tests"
-  lane : unit_tests do
+  lane :unit_tests do
     run_tests(workspace: "FileImportApp.xcworkspace",
   	      scheme: "FileImportAppTests",
 	      device: "iPhone 14",
