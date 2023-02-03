@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D556A764BCFA13F7298907E /* Pods_FileImportApp_FileImportAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB6F440D6DF6C7DBE254FAD /* Pods_FileImportApp_FileImportAppUITests.framework */; };
+		8A259685298D338F000AABEC /* FileExportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691E9298A5F1600D2A8A8 /* FileExportType.swift */; };
 		8A2691D4298944F100D2A8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691D3298944F100D2A8A8 /* AppDelegate.swift */; };
 		8A2691DD298950D800D2A8A8 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DC298950D800D2A8A8 /* Configuration.swift */; };
 		8A2691DF29895A2200D2A8A8 /* AppAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2691DE29895A2200D2A8A8 /* AppAnalytics.swift */; };
@@ -517,6 +518,7 @@
 				DBA61EDC26480DDC00F27597 /* FileImportAppTests.swift in Sources */,
 				8A2691E6298A5D4800D2A8A8 /* AppAnalytics.swift in Sources */,
 				8A2691EF298A704700D2A8A8 /* AccessabilityID.swift in Sources */,
+				8A259685298D338F000AABEC /* FileExportType.swift in Sources */,
 				8A2691E5298A5C1400D2A8A8 /* AnalyticsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,9 +671,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"FileImportApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2M6MREMEHZ;
+				DEVELOPMENT_TEAM = T84TP2N2JU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FileImportApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -683,6 +686,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -693,8 +697,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FileImportApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 2M6MREMEHZ;
+				DEVELOPMENT_TEAM = T84TP2N2JU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FileImportApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -706,6 +711,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
