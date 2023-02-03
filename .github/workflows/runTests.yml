@@ -8,13 +8,13 @@ jobs:
   run_tests:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
       - name: Bundle dependencies
         run: bundle install
 
       - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.1
+        uses: styfle/cancel-workflow-action
         with:
           access_token: ${{ github.token }}
 
@@ -22,7 +22,7 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         with:
           path: Pods
           key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
@@ -30,7 +30,7 @@ jobs:
            ${{ runner.os }}-pods-
 
       - name: CocoaPods dependencies
-        run: pod install
+        run: bundle exec pod install
       
       - name: Run Unit Tests
         run: bundle exec fastlane unit_tests
