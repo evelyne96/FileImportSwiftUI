@@ -6,8 +6,6 @@ target 'FileImportApp' do
   use_frameworks!
 
   # Pods for FileImportApp
-  pod 'AppCenter/Analytics'
-  pod 'AppCenter/Crashes'
 
   target 'FileImportAppTests' do
     inherit! :search_paths
